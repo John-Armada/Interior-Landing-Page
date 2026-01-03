@@ -10,9 +10,9 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="w-360 h-auto mx-auto">
+  <body class="min-h-screen">
     <header class="header">
-      <div class="container flex flex-row items-center justify-between py-8">
+      <div class="container mx-auto px-4 flex flex-row items-center justify-between py-8">
         <a href="#" class="flex flex-row gap-1.5">
           <img
             class="w-12.5 h-8"
@@ -21,6 +21,13 @@
           />
           <p class="text-3xl font-bold">Furniro</p>
         </a>
+        
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-btn" class="mobile-menu-toggle">
+          <i class="fa-solid fa-bars fa-lg"></i>
+          <span class="menu-icon-fallback">☰</span>
+        </button>
+        
         <nav class="nav">
           <ul class="nav-links flex flex-row gap-20">
             <a href="#"><li class="font-medium">Home</li></a>
@@ -40,23 +47,23 @@
     </header>
     <main>
       <section
-        class="relative bg-[url('../assets/images/hero-image.png')] bg-cover bg-no-repeat h-[716.82px] w-360 mb-14"
+        class="hero-section relative bg-[url('../assets/images/hero-image.png')] bg-cover bg-no-repeat bg-center min-h-screen mb-14"
       >
-        <div class="hero-container absolute bottom-[116.53px] right-14.5">
+        <div class="hero-container">
           <div
-            class="w-160.75 bg-[#FFF3E3] rounded-[10px] pl-10.25 pt-15.5 pb-9.25"
+            class="hero-content bg-[#FFF3E3] rounded-[10px]"
           >
-            <span class="font-semibold text-[#333] mb-1">New Arrival</span>
-            <h1 class="font-bold text-5xl text-[#B88E2F] mb-4.25">
+            <span class="font-semibold text-[#333] mb-1 block">New Arrival</span>
+            <h1 class="hero-title font-bold text-[#B88E2F] mb-4">
               Discover Our<br />
               New Collection
             </h1>
-            <p class="text-[#333] text-[18px] font-medium mb-11.5">
+            <p class="hero-text text-[#333] font-medium mb-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
               tellus, luctus nec ullamcorper mattis.
             </p>
             <button
-              class="bg-[#B88E2F] text-white font-bold uppercase px-18 py-6.25"
+              class="hero-button bg-[#B88E2F] text-white font-bold uppercase"
             >
               Buy Now
             </button>
@@ -64,33 +71,33 @@
         </div>
       </section>
 
-      <section>
-        <h2 class="text-[32px] font-bold text-[#333] text-center">
+      <section class="container mx-auto px-4 mb-14">
+        <h2 class="browse-title text-[32px] font-bold text-[#333] text-center">
           Browse the Range
         </h2>
-        <p class="text-[#666] text-[20px] text-center mb-7.75">
+        <p class="text-[#666] text-[20px] text-center mb-8">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
-        <div class="flex flex-row gap-5 justify-center">
-          <div class="flex flex-col items-center gap-5">
+        <div class="browse-grid">
+          <div class="browse-item flex flex-col items-center gap-5">
             <img
-              class="w[381px] h-120"
+              class="w-full h-auto max-w-full"
               src="./assets/images/dining-room.png"
               alt="Dining Room"
             />
             <p class="text-[20px] font-semibold">Dining</p>
           </div>
-          <div class="flex flex-col items-center gap-5">
+          <div class="browse-item flex flex-col items-center gap-5">
             <img
-              class="w[381px] h-120"
+              class="w-full h-auto max-w-full"
               src="./assets/images/living-room.png"
               alt="Living Room"
             />
             <p class="text-[20px] font-semibold">Living</p>
           </div>
-          <div class="flex flex-col items-center gap-5">
+          <div class="browse-item flex flex-col items-center gap-5">
             <img
-              class="w[381px] h-120"
+              class="w-full h-auto max-w-full"
               src="./assets/images/bed-room.png"
               alt="Bed Room"
             />
@@ -99,14 +106,14 @@
         </div>
       </section>
 
-      <section class="mt-14 mb-[69px]">
-        <h2 class="text-[#3A3A3A] text-center text-[40px] font-bold">
+      <section class="container mx-auto px-4 mt-14 mb-[69px]">
+        <h2 class="products-title text-[#3A3A3A] text-center text-[40px] font-bold">
           Our Products
         </h2>
-        <div class="mt-8 flex flex-row gap-8 justify-center flex-wrap">
-          <div class="w-71.25 relative">
+        <div class="products-grid mt-8">
+          <div class="product-card relative">
             <img
-              class="w-full h-75.25 bg-cover bg-no-repeat"
+              class="w-full h-auto bg-cover bg-no-repeat"
               src="./assets/images/syltherine.png"
               alt="Syltherine"
             />
@@ -129,9 +136,9 @@
             </div>
           </div>
 
-          <div class="w-71.25 relative">
+          <div class="product-card relative">
             <img
-              class="w-full h-75.25 bg-cover bg-no-repeat"
+              class="w-full h-auto bg-cover bg-no-repeat"
               src="./assets/images/leviosa.png"
               alt="Leviosa"
             />
@@ -152,9 +159,9 @@
             </div>
           </div>
 
-          <div class="w-71.25 relative">
+          <div class="product-card relative">
             <img
-              class="w-full h-75.25 bg-cover bg-no-repeat"
+              class="w-full h-auto bg-cover bg-no-repeat"
               src="./assets/images/lolito.png"
               alt="Lolito"
             />
@@ -175,9 +182,9 @@
             </div>
           </div>
 
-          <div class="w-71.25 relative">
+          <div class="product-card relative">
             <img
-              class="w-full h-75.25 bg-cover bg-no-repeat"
+              class="w-full h-auto bg-cover bg-no-repeat"
               src="./assets/images/respira.jpg"
               alt="Respira"
             />
@@ -200,9 +207,9 @@
             </div>
           </div>
 
-          <div class="w-71.25 relative">
+          <div class="product-card relative">
             <img
-              class="w-full h-75.25 bg-cover bg-no-repeat"
+              class="w-full h-auto bg-cover bg-no-repeat"
               src="./assets/images/grifo.png"
               alt="Grifo"
             />
@@ -217,9 +224,9 @@
             </div>
           </div>
 
-          <div class="w-71.25 relative">
+          <div class="product-card relative">
             <img
-              class="w-full h-75.25 bg-cover bg-no-repeat"
+              class="w-full h-auto bg-cover bg-no-repeat"
               src="./assets/images/muggo.png"
               alt="Muggo"
             />
@@ -237,9 +244,9 @@
             </div>
           </div>
 
-          <div class="w-71.25 relative">
+          <div class="product-card relative">
             <img
-              class="w-full h-75.25 bg-cover bg-no-repeat"
+              class="w-full h-auto bg-cover bg-no-repeat"
               src="./assets/images/pingky.jpg"
               alt="Pingky"
             />
@@ -260,9 +267,9 @@
             </div>
           </div>
 
-          <div class="w-71.25 relative">
+          <div class="product-card relative">
             <img
-              class="w-full h-75.25 bg-cover bg-no-repeat"
+              class="w-full h-auto bg-cover bg-no-repeat"
               src="./assets/images/potty.jpg"
               alt="Potty"
             />
@@ -281,20 +288,20 @@
           </div>
         </div>
         <button
-          class="w-61.25 h-12 border border-solid border-[#B88E2F] bg-white py-3 px-18.5 text-[#B88E2F] font-semibold mt-8 mx-auto block"
+          class="show-more-btn border border-solid border-[#B88E2F] bg-white text-[#B88E2F] font-semibold mt-8 mx-auto block"
         >
           Show more
         </button>
       </section>
 
-      <section>
-        <div class="flex flex-row">
-          <div class="flex flex-col mr-10.5">
-            <h2 class="text-[#3A3A3A] text-[40px] font-bold">
+      <section class="inspiration-section container mx-auto px-4 mb-14">
+        <div class="inspiration-content">
+          <div class="inspiration-text">
+            <h2 class="inspiration-title text-[#3A3A3A] font-bold">
               50+ Beautiful rooms inspiration
             </h2>
-            <p class="text-[#616161] font-medium">
-              Our designer already made a lot of beautiful prototipe of rooms
+            <p class="text-[#616161] font-medium mb-6">
+              Our designer already made a lot of beautiful prototypes of rooms
               that inspire you
             </p>
             <button class="bg-[#B88E2F] text-white font-semibold px-9 py-3">
@@ -302,17 +309,17 @@
             </button>
           </div>
 
-          <div class="flex flex-row gap-[24px]">
+          <div class="inspiration-images">
             <div
-              class="bg-[url('../assets/images/hero-image.png')] w-101 h-145.5 bg-cover bg-no-repeat"
+              class="inspiration-image bg-[url('../assets/images/hero-image.png')] bg-cover bg-no-repeat bg-center"
             ></div>
 
             <div
-              class="bg-[url('../assets/images/study-room.png')] w-93 h-121.5 bg-cover bg-no-repeat"
+              class="inspiration-image bg-[url('../assets/images/study-room.png')] bg-cover bg-no-repeat bg-center"
             ></div>
 
             <div
-              class="bg-[url('../assets/images/hall.png')] w-93 h-121.5 bg-cover bg-no-repeat"
+              class="inspiration-image bg-[url('../assets/images/hall.png')] bg-cover bg-no-repeat bg-center"
             ></div>
           </div>
         </div>
